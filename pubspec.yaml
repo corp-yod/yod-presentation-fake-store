@@ -4,18 +4,33 @@ version: 0.0.1
 homepage:
 
 environment:
-  sdk: ^3.10.4
+  sdk: ^3.8.1
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
+  yod:
+    git:
+      url: https://github.com/corp-yod/yod.git
+      ref: master
+
+  yod_nak_ram_ui_kit:
+    path: ../yod-nak-ram-ui-kit
+    # git:
+    #   url: https://github.com/corp-yod/yod-nak-ram-ui-kit.git
+    #   ref: master
+
+  yod_navigator:
+    git:
+      url: https://github.com/corp-yod/yod-navigator.git
+      ref: main
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-
 
 flutter:
   # To add assets to your package, add an assets section, like this:
