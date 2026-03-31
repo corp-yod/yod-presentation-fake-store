@@ -15,22 +15,21 @@ class MainAppFakeStore extends StatelessWidget {
           return Navigator(
             pages: [
               if (currentIndex.value == 0)
-                const MaterialPage(
+                MaterialPage(
                   child: Center(
-                    child: Text('Home Page', style: TextStyle(fontSize: 24)),
+                    child: RamTitleText(
+                      text: 'Home Page',
+                      colorText: context.ramTheme.onPrimary,
+                    ),
                   ),
                 ),
               if (currentIndex.value == 1)
                 const MaterialPage(
-                  child: Center(
-                    child: Text('Search Page', style: TextStyle(fontSize: 24)),
-                  ),
+                  child: Center(child: RamTitleText(text: 'Search Page')),
                 ),
               if (currentIndex.value == 2)
                 const MaterialPage(
-                  child: Center(
-                    child: Text('Profile Page', style: TextStyle(fontSize: 24)),
-                  ),
+                  child: Center(child: RamTitleText(text: 'Profile Page')),
                 ),
             ],
             onPopPage: (route, result) {
