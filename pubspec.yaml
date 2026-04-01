@@ -32,6 +32,13 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^6.0.0
 
+# dependency_overrides:
+#   yod:
+#     path: ../yod
+#     # git:
+#     #   url: https://github.com/corp-yod/yod.git
+#     #   ref: master
+
 flutter:
   # To add assets to your package, add an assets section, like this:
   # assets:
